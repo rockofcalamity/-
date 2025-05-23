@@ -7,7 +7,7 @@ from PIL import Image
 
 matplotlib.use('Agg')
 
-API_TOKEN = '7634387775:AAGvG_-Wtd3-8qmnRBDnYhy2gkbF_Vrr9Rc'
+API_TOKEN = ''
 bot = telebot.TeleBot(API_TOKEN)
 
 user_data = {}
