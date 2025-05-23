@@ -12,6 +12,10 @@ bot = telebot.TeleBot(API_TOKEN)
 
 user_data = {}
 
+@bot.message_handler(commands=['start'])
+def send_welcome(message):
+    bot.reply_to(message, "Привет! Я бот для создания графиков. Введи команду '/generate', чтобы начать.")
+
 
 @bot.message_handler(commands=['generate'])
 def generate(message):
